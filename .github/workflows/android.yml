@@ -34,6 +34,11 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      - name: Check Java version
+        run: |
+          java -version
+          echo "JAVA_HOME=$JAVA_HOME"
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
